@@ -3,49 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about us.css">
+    <link rel="icon" href="logo skin.png" type="image/x-icon"/>
     <title>About Us - Website kita</title>
-
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.3;
-            color: #000000;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center; /* Tambahkan properti text-align: center; di sini */
-        }
-
-        h2 {
-            color: #007BFF;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Website Kita</h1>
-        <nav>
+    <div class="logo">Website Kita</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+        <nav class="nav-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <script src="/script.js"></script>
+    
     <main>
         <section>
             <div class="container">
@@ -63,5 +44,19 @@
     <footer>
         <p>&copy; 2024 Website Kita. Hubungi Kita di info@websitekita.com</p>
     </footer>
+
+    <script>
+        const Hamburger = document.getElementById('hamburger')
+        const Nav = document.getElementById('menu')
+  
+        Hamburger.addEventListener('click', () => {
+          Nav.classList.toggle('hidden')
+        })
+  
+        Close.addEventListener('click', () => {
+          Nav.classList.toggle('hidden')
+        })
+      </script>
+  
 </body>
 </html>

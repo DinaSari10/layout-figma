@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" href="logo skin.png" type="image/x-icon"/>
+    <title>About Us - Website kita</title>
+</head>
+<body>
+    <header>
+        <h1>Website Kita</h1>
+        <nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li>
+                        <a href="#">Produk</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Moisturizer</a></li>
+                            <li><a href="#">Eye serum</a></li>
+                            <li><a href="#">Toner</a></li>
+                            <li><a href="#">Sunscreen</a></li>
+                            <li><a href="#">Facial wash</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+          </nav>
+    </header>
+
+    <h2>Produk Kita</h2>
+
+    <table style="width: 100%;">
+        <tr>
+            <th>No</th>
+            <th>Produk</th>
+            <th>Jenis Produk</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img src="mois.jpg" alt="product img" width="300px" height="300px"></td>
+            <td>Moisturizer</td>
+            <td>Rp.42.000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="eye serum.jpg" alt="product img" width="300px" height="300px"></td>
+            <td>Eye serum</td>
+            <td>Rp.35.000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="toner.jpeg" alt="product img" width="300px" height="300px"></td>
+            <td>Toner</td>
+            <td>Rp.36.000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="sunscreen.jpg" alt="product img" width="300px" height="300px"></td>
+            <td>Sunscreen</td>
+            <td>Rp.42.000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="sabun cuci muka.jpeg" alt="product img" width="300px" height="300px"></td>
+            <td>Facial wash</td>
+            <td>Rp.38.000</td>
+        </tr>
+    </table>
+
+
+    <footer>
+        <p>&copy; 2024 Website Kita. Hubungi Kita di info@websitekita.com</p>
+    </footer>
+
+    <script>
+        const Hamburger = document.getElementById('hamburger')
+        const Nav = document.getElementById('menu')
+  
+        Hamburger.addEventListener('click', () => {
+          Nav.classList.toggle('hidden')
+        })
+  
+        Close.addEventListener('click', () => {
+          Nav.classList.toggle('hidden')
+        })
+      </script>
+      
+</body>
+</html>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="logo skin.png" type="image/x-icon"/>
     <title>Contact Us - Website kita</title>
 </head>
 <body>
@@ -12,7 +13,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -20,21 +22,49 @@
 
     <main>
         <section>
-            <div class="container">
-            <div>
-                <h2>CONTACT US</h2>
-                <p>Jika Anda memiliki pertanyaan atau tertarik dengan layanan website kita, silakan hubungi kita:</p>
-                <p>Email: info@websitekita.com</p>
-                <p>Telepon: (123) 456-7890</p>
-                <p>Alamat: Jln. Cinta Abadi, Bandung, Indonesia</p>
-            </div>
-            </div>
+            <h2>Selamat Datang di Website Kita</h2>
+
+            <form>
+                <h3>Hubungi Kami</h3>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" >
+
+                <label for="jumlah_produk">Jumlah Produk:</label>
+                <input type="number" id="jumlah_produk" name="jumlah_produk" min="0">
+
+                <label for="Produk">Produk:</label>
+                <select class="merekDropdown">
+                <option value="Moisturizer">Moisturizer</option>
+                <option value="Eye serum">Eye serum</option>
+                <option value="Toner">Toner</option>
+                <option value="Sunscreen">Sunscreen</option>
+                <option value="Facial wash">Facial wash</option>
+               </select>
+
+               <label for="Alamat">Alamat:</label>
+               <input type="text" id="Alamat" name="Alamat">
+
+                <button type="submit">Kirim</button>
+            </form>
         </section>
     </main>
-
 
     <footer>
         <p>&copy; 2024 Website Kita. Hubungi Kita di info@websitekita.com </p>
     </footer>
+
+    <script>
+        const Hamburger = document.getElementById('hamburger')
+        const Nav = document.getElementById('menu')
+  
+        Hamburger.addEventListener('click', () => {
+          Nav.classList.toggle('hidden')
+        })
+  
+        Close.addEventListener('click', () => {
+          Nav.classList.toggle('hidden')
+        })
+      </script>
+      
 </body>
 </html>
